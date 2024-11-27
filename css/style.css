@@ -321,6 +321,47 @@ h2 i {
     color: var(--accent-color);
 }
 
+/* 轮播图样式 */
+.carousel {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 60px;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.carousel-slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+
 /* 招新内容样式 */
 .recruitment-content {
     margin-top: 30px;
